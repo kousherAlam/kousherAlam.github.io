@@ -1378,7 +1378,7 @@ a.text-black:hover, a.text-black:focus { color: black !important; }
 
 @media (min-width: 992px) { .details-page-title { padding: 7rem 2rem; } }
 
-.image-viewer { display: inline-block; width: 100%; margin-bottom: 2.5em; position: relative; top: -45px; }
+.image-viewer { display: inline-block; display: flex; flex-wrap: nowrap; width: 100%; margin-bottom: 2.5em; position: relative; top: -20px; overflow: hidden; }
 
 .image-viewer ul li { max-width: 350px; float: left; padding: 5px; cursor: pointer; }
 

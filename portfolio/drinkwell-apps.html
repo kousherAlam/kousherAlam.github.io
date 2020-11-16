@@ -106,7 +106,7 @@
 
 <div class="mobile-menu fixed-top bg-primary d-md-none d-block" id="mobile-menu">
     <div class="close-button position-absolute text-center">
-        <button class="btn btn-danger" onclick="toggleMenu()">Close</button>
+        <button class="btn btn-danger pl-4 pr-4 pt-2 pb-2 rounded-pill" onclick="toggleMenu()">Close</button>
     </div>
     <div class="pl-3 pr-3 pt-5">
         <ul class="list-style-none pt-5">
@@ -168,8 +168,11 @@
 
 <p><br /></p>
 <h2 id="screenshots-pump-operator">Screenshots [Pump Operator]</h2>
-<div class="image-viewer">
-    <ul id="images" class="unlist">
+<div class="image-viewer image-viewer-slider">
+    <div class="bg-info d-flex w-100 justify-content-center align-items-center mt-3 loading text-center shadow border border-light" style="min-height: 180px;">
+      <p>Loading Preview</p>
+    </div> 
+    <ul id="images" class="unlist d-none">
     
       
       <li>
@@ -331,8 +334,11 @@
 <br /></p>
 
 <h2 id="screenshots-dealer">Screenshots [Dealer]</h2>
-<div class="image-viewer">
-    <ul id="images-2" class="unlist">
+<div class="image-viewer image-viewer-slider">
+    <div class="bg-info d-flex w-100 justify-content-center align-items-center mt-3 loading text-center shadow border border-light" style="min-height: 180px;">
+      <p>Loading Preview</p>
+    </div> 
+    <ul id="images-2" class="unlist d-none">
     
       
       <li>
