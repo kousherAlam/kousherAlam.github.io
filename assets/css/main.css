@@ -1390,9 +1390,9 @@ a.text-black:hover, a.text-black:focus { color: black !important; }
 
 #share-holder .share-content { padding: 5px 0px; border-radius: 8px; }
 
-#share-holder .share-content button { padding: 0px; border-radius: 15px; border-width: 0px; margin-right: 10px; background-color: white; }
+#share-holder .share-content button { padding: 0px; border-radius: 15px; border-width: 0px; margin-right: 15px; background-color: white; }
 
-#share-holder .share-content img { width: 35px; }
+#share-holder .share-content img { width: 33px; }
 
 #loader-holder { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99999; background-color: rgba(228, 241, 249, 0.5); }
 
