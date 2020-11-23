@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Front End Development - Kousher Alam</title>
+  <title>NodeJS Unit Test with Mocha and Chai - Kousher Alam</title>
   <meta name="description"
     content="This is an example of a meta description.This will often show up in search results.">
   <meta name="keyword" content="Software Engineer, Web Developer, Angular, Flutter, C++, Developer">
@@ -34,23 +34,29 @@
   <meta name="msapplication-TileImage" content="/assets/favicon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  
+  <link rel="stylesheet" href="/assets/css/viewer.min.css">
+  
   <link type="application/atom+xml" rel="alternate" href="https://kousheralam.tech/feed.xml" title="Kousher Alam" />
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Front End Development | Kousher Alam</title>
+<title>NodeJS Unit Test with Mocha and Chai | Kousher Alam</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Front End Development" />
+<meta property="og:title" content="NodeJS Unit Test with Mocha and Chai" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Skill Destails description will be here" />
-<meta property="og:description" content="Skill Destails description will be here" />
-<link rel="canonical" href="https://kousheralam.tech/my-skill-details/front-end.html" />
-<meta property="og:url" content="https://kousheralam.tech/my-skill-details/front-end.html" />
+<meta name="description" content="NodeJS Unit Test with Mocha and Chai" />
+<meta property="og:description" content="NodeJS Unit Test with Mocha and Chai" />
+<link rel="canonical" href="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html" />
+<meta property="og:url" content="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html" />
 <meta property="og:site_name" content="Kousher Alam" />
-<meta property="og:image" content="https://kousheralam.tech/assets/blog/css-grid/future_technology_prospects.png" />
+<meta property="og:image" content="https://kousheralam.tech/assets/blog/nodejs/mocha-chai-3.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-23T00:00:00+06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://kousheralam.tech/assets/blog/css-grid/future_technology_prospects.png" />
-<meta property="twitter:title" content="Front End Development" />
+<meta property="twitter:image" content="https://kousheralam.tech/assets/blog/nodejs/mocha-chai-3.png" />
+<meta property="twitter:title" content="NodeJS Unit Test with Mocha and Chai" />
 <script type="application/ld+json">
-{"url":"https://kousheralam.tech/my-skill-details/front-end.html","image":"https://kousheralam.tech/assets/blog/css-grid/future_technology_prospects.png","headline":"Front End Development","description":"Skill Destails description will be here","@type":"WebPage","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html"},"url":"https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html","image":"https://kousheralam.tech/assets/blog/nodejs/mocha-chai-3.png","headline":"NodeJS Unit Test with Mocha and Chai","dateModified":"2020-11-23T00:00:00+06:00","datePublished":"2020-11-23T00:00:00+06:00","description":"NodeJS Unit Test with Mocha and Chai","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script src="/assets/js/app.js"></script>
@@ -80,7 +86,7 @@
             </div>
             <div class="menu-holder d-none d-md-block col-9 text-right">
                 <ul class="menu mb-0">
-                    <li > 
+                    <li  class="active" > 
                         <a href="/blog">Blog</a>
                     </li>
                     <li > 
@@ -106,7 +112,7 @@
         <ul class="list-style-none pt-5">
             <li>
                 <a 
-                    class='btn text-light btn-block text-left ' 
+                    class='btn text-light btn-block text-left  active ' 
                     href="/blog">
                     Blog
                 </a>
@@ -139,7 +145,7 @@
 <div class="main-content">
   
     <div class='details-page-title bg-info shadow' 
-    style="background-image: url('/assets/blog/css-grid/future_technology_prospects.png'); min-height: 350px;">
+    style="background-image: url('/assets/blog/nodejs/mocha-chai-3.png'); min-height: 350px;">
 </div>
     <div class="container shadow pt-4 p-3 pr-3 pb-2 mb-5 bg-white position-relative" style="top: -30px;">
       
@@ -147,37 +153,120 @@
     <div class="col-12">
         <h1 class="h3 position-relative bg-white pb-3 pr-3">
             <span class="text-dark"></span> 
-            <span style="color: #d6d5d5 !important;">Front End Development</span>
+            <span style="color: #d6d5d5 !important;">NodeJS Unit Test with Mocha and Chai</span>
         </h1>
     </div>
 </div>
 
         <div class="row">
   <div class="col-12 p-3 p-md-0">
-    <div class="title-section mb-4">
-      <h1 class="mb-1">My Front End Development Skill Details</h1>
-      <div class='percent-holder row'>
-        
-        
-        <div class="col-12 col-md-7 percent border rounded border-success bg-info">
-          <div style="width: 85%; height: 20px;" class="bg-success text-center text-white small">85 %</div>
-        </div>
-        
-        <div class="col-12 col-md-5"></div>
-      </div>
+    <h1 id="why-need-unit-test">Why Need Unit Test</h1>
+
+<h2 id="what-is-mocha-and-chai">What is Mocha and Chai</h2>
+<p>unit testing framework , chai is for checking function library</p>
+
+<h2 id="basic-unit-test">Basic Unit Test</h2>
+<p>first we describe a block, then we describe what a specific block of code will do, then we test that block of code with chai ehckecing librabry.</p>
+
+<h2 id="positive-and-negetive-unit-test">Positive and negetive unit test</h2>
+<p>checking a pices of code positively and negetively.</p>
+
+<h2 id="unit-test-initial-conditation">Unit test initial conditation</h2>
+
+  </div>
+  <div class="col-12 p-3 p-md-0 mt-2">
+    <div class="devider">
+    <img src="/assets/icons/devider.svg" alt="devider" />
+ </div>
+ 
+    <div id="share-holder" class="mb-4" style="padding-bottom: 30px;">
+    <h3 class="font-weight-bold small text-capitalize mb-0">Share on </h3>
+    <div class="share-content">
+        <button data-sharer="facebook" data-hashtag="kousheralam, , software engineer"
+            title="share on facebook"
+            style="padding-left: 0px;"
+            data-url="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html">
+            <img src="/assets/icons/facebook.svg" alt="Facebook" />
+        </button>
+
+        <button data-sharer="twitter" data-title=""
+            title="share on twitter"
+            data-hashtags="kousheralam, software engineer" data-url="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html">
+            <img src="/assets/icons/twitter.svg" alt="Twitter" />
+        </button>
+
+        <button class="button linkedin" data-sharer="linkedin"
+            title="share on linkedin"
+            data-url="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html">
+            <img src="/assets/icons/linkedin.svg" alt="Linkedin" />
+        </button>
+
+        <button class="button" data-sharer="email" data-title=""
+            title="share via email"
+            data-url="https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html" data-subject="Kousher alam, Is an Awesome Software Engineer!"
+            data-to="some@email.com">
+            <img src="/assets/icons/email.svg" alt="Email" />
+        </button>
+
+        <button onclick="copyLink()" 
+        title="copy the link">
+            <img src="/assets/icons/copy.svg" alt="Copy" />
+        </button>
     </div>
-    <div class="main-skill-content">
-      
+</div>
 
-    </div>
-    <div class="mt-5">
-      
+<script>
+    function copyLink() {
+        var url = "https://kousheralam.tech/blog/nodejs/unittest/2020/11/23/nodejs-unit-test-with-mocha-and-chai.html";
+        var copyInp = document.createElement("input");
+        copyInp.style.display = "none!important";
+        document.body.appendChild(copyInp);
+        copyInp.value = url;
+        copyInp.select();
+        copyInp.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        copyInp.parentElement.removeChild(copyInp);
+        alert("link copied to clipboard");
+        toggleShare(true);
+    }
+</script>
+    <script>
+    window.addEventListener("load", function(){
+      var ids = null;
+      var isOneAutoplay = false;
+      if(ids && ids != null && ids.length > 0){
+          for(var i=0; i<ids.length; i++){
+              const gallery = new Viewer(document.getElementById(ids[i]));
+                if(tns){
+                    var slider = tns({
+                        container: '#'+ids[i],
+                        items: 4,
+                        mouseDrag: true,
+                        autoplay: !isOneAutoplay,
+                        autoplayButtonOutput: false,
+                    });
+                    isOneAutoplay = true;
+                }
+          }
+      }
+    });
+</script>
+  
+    <div class="post-comments" style="padding-bottom: 30px;">
+    <div id="disqus_thread"></div>
+    <script>
+        (function () {
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://personal-website-kousher-alam.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
 
-      
-
-      
-
-    </div>
+</div>
   </div>
 </div>
       </div>
@@ -310,6 +399,12 @@
 
   
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  
+  <script src="/assets/js/viewer.min.js"></script>
+  
+  <script src="/assets/js/sharer.min.js"></script>
   
 </body>
 
