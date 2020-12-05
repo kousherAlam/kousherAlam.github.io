@@ -1497,7 +1497,7 @@ pre .hljs-number { color: #93ff98; }
 
 pre .hljs-function { color: #FFEB3B; }
 
-body { background-color: #f6f6f6; }
+body { background-color: #f6f6f6; word-break: break-word; }
 
 img { max-width: 100%; }
 
