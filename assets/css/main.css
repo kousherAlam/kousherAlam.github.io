@@ -1439,9 +1439,19 @@ a.text-black:hover, a.text-black:focus { color: black !important; }
 @keyframes lds-roller { 0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); } }
 
-.header { position: fixed; z-index: 1000; top: 0px; left: 0px; width: 100%; min-height: 64px; padding: 10px 0px; }
+.header { position: fixed; z-index: 1000; top: 0px; left: 0px; width: 100%; min-height: 64px; padding: 0px 0px; }
 
-.logo a { font-size: 2em; }
+.logo { top: 5px; }
+
+.logo a { width: 278px; }
+
+.logo a img { border-radius: 8px; width: 50px; position: relative; top: -9px; }
+
+.logo a .text { top: 4px; }
+
+.logo a .designation { pointer-events: none; }
+
+.mobile-menu-btn { z-index: 999; }
 
 .menu { list-style-type: none; display: inline-block; }
 
@@ -1449,17 +1459,17 @@ a.text-black:hover, a.text-black:focus { color: black !important; }
 
 .menu li:last-child { margin-right: 0px; }
 
-.menu li button, .menu li a { text-align: center; color: #FFFFFF; display: block; padding: 8px 20px; min-width: 120px; border: 2px solid #023152; text-decoration: none; opacity: .8; }
+.menu li button, .menu li a { text-align: center; color: #FFFFFF; display: block; padding: 19px 20px; min-width: 120px; text-decoration: none; opacity: 0.8; }
 
 .menu li button:hover, .menu li a:hover { opacity: 1; }
 
-.menu li.active a { opacity: 1; color: #E4F1F9; border-color: #E4F1F9; }
+.menu li.active a { opacity: 1; color: #E4F1F9; background: #0871bd; }
 
 .mobile-menu { height: 100%; will-change: transform; transform: translate(100%, 0px); transition: transform 300ms ease-in-out; }
 
 .mobile-menu.open { transform: translate(0px, 0px); }
 
-.mobile-menu ul li a.active { color: #FFEB3B !important; border-bottom: 2px solid #FFEB3B !important; }
+.mobile-menu ul li a.active { color: #ffeb3b !important; border-bottom: 2px solid #ffeb3b !important; }
 
 .close-button { bottom: 50px; left: 50%; transform: translate(-50%, 0px); }
 
