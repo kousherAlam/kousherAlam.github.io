@@ -1,4 +1,3 @@
+My Personal Website <a href="https://kousheralam.tech/">kousheralam.tech</a>. This website build using jekyll and github pages. 
 
-https://medium.com/@hossainkhan/using-custom-domain-for-github-pages-86b303d3918a#:~:text=Go%20to%20your%20GitHub%20Pages,CNAME%20in%20the%20same%20repository.
-
-
+In this website i wrote about myself in details and publish my thought, portfolio and demo work.
